@@ -1,0 +1,35 @@
+name: Build Config
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      # - name: Create conf.json with variables
+      #   run: |
+      #     echo '{
+      #       "apiEndpoint": "${{ vars.API_ENDPOINT }}",
+      #       "timeoutSeconds": ${{ vars.TIMEOUT_SECONDS }},
+      #       # "featureFlags": ${{ vars.FEATURE_FLAGS }}
+      #     }' > conf.json
+      
+      - name: Show conf
+        run: cat conf.json
+
+      - name: Replace variables in conf.json
+        run: |
+          sed -i 's|${ddEventKey}|${{ vars.ddEventKey }}|g' conf.json
+          sed -i 's|${CASETEXT_OAUTH_CLIENT_ID}|${{ vars.CASETEXT_OAUTH_CLIENT_ID }}|g' conf.json
+          sed -i 's|${CASETEXT_OAUTH_CLIENT_SECRET}|${{ vars.CASETEXT_OAUTH_CLIENT_SECRET }}|g' conf.json
+          sed -i 's|${CASETEXT_COVEO_API_CLIENT_ID}|${{ vars.CASETEXT_COVEO_API_CLIENT_ID }}|g' conf.json
+          sed -i 's|${CASETEXT_COVEO_API_CLIENT_SECRET}|${{ vars.CASETEXT_COVEO_API_CLIENT_SECRET }}|g' conf.json
+          
+
+      - name: Show updated conf
+        run: cat conf.json

@@ -1,0 +1,18 @@
+git log <branch_name> (count your total commits in the task branch)
+git rebase -i Head~X (replace x with count) 
+ 
+Press Shift + i to edit. 
+Write pick for the first commit and “squash” or “s” for every other. 
+Press esc to move out of edit mode. 
+Write :wq to save and exit. 
+ 
+Next screen:
+Press Shift + i to edit. 
+Comment out unnecessary commit messages, modify the one to keep. To comment out add # in front.
+Press esc to move out of edit mode. 
+Write :wq to save and exit. 
+ 
+Git log <branch_name> 
+ 
+Squash commit done, simple do git push origin <branch_name> 
+ 

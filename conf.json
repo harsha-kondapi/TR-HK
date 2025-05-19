@@ -1,0 +1,525 @@
+{
+    "name": "QA_CaseText",
+    "envVariables": [
+        {
+            "key": "Coveo_Search_API",
+            "value": "https://api.thomsonreuters.com/digital/unauth/v1/companies/WEST/coveoSearchResults?userInput={{context.session.BotUserSession.userQuery}}&product={{context.session.BotUserSession.productListForCoveo}}&timeZone={{context.session.BotUserSession.timezone}}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "ddEventKey",
+            "value": "${ddEventKey}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CriticalNotificationAPI",
+            "value": "https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/sendCriticalNotification/companies/WEST/emailId/triva_tr_nonprod@thomsonreuters.com/criticalNotification",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "ddEventApi",
+            "value": "https://api.datadoghq.com/api/v1/events",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CoveoProduct",
+            "value": "Account Management",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "botEnv",
+            "value": "QA",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "botkit_URL",
+            "value": "https://thomson-reuters-qa.kore.ai/TR_CASETEXT_QA",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "ClosedCaseCreationAPI",
+            "value": "https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/companies/WEST/accounts/9999999999/contact/CHATBOT/cases?operation=CLOSED_CASE&segment=CASETEXT",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "UpdateOfflineCaseAPI",
+            "value": "https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/companies/WEST/accounts/9999999999/cases/{{context.session.BotUserSession.OfflineCaseNumber}}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "checkAgentAvailability",
+            "value": "https://d.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/chat/rest/Visitor/Availability?Availability.ids=573Hs00000023We&deployment_id=572Hs0000002340&org_id=00DO900000AVOGP",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "OfflineCaseCreationAPI",
+            "value": "https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/companies/WEST/accounts/9999999999/contact/CHATBOT/cases?operation=CREATECASE&segment=CASETEXT",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "MOCK_ENV_REMOVE",
+            "value": "MOCK_ENV_REMOVE CHANGED",
+            "variableType": "env",
+            "hint": "THIS IS A NOTE",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "MOCK_ENV_REMOVE_2",
+            "value": "REMOVE",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "MOCK_ENV_VARIABLE_3",
+            "value": "REMOVE",
+            "variableType": "env",
+            "hint": "PLEASE REMOVE THIS VARIABLE IF YOU SEE IT",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "languages",
+            "value": "[\"en\"]",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "publicUrl",
+            "value": "https://bots.kore.ai/api/public/",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "transcriptUrl",
+            "value": "https://bots.kore.ai/api/public/bot/",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "server",
+            "value": "{\"port\":8003}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "app",
+            "value": "{\"apiPrefix\":\"/TR_CASETEXT_QA\",\"url\":\"https://dzkqeqbgpp.a.pinggy.link\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "redis",
+            "value": "{\"options\":{\"host\":\"localhost\",\"port\":6379,\"password\":\"kore123\"},\"available\":true,\"ttl\":3600}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "live_agent",
+            "value": "{\"liveAgentUrl\":\"https://d.la3-c1cs-ia5.salesforceliveagent.com/chat/rest\",\"organizationId\":\"00DO900000AVOGP\",\"deploymentId\":\"572Hs0000002340\",\"screenResolution\":\"1900x1080\",\"userAgent\":\"Mozilla/5.0\",\"apiVersion\":\"46\",\"language\":\"en-US\",\"buttonId\":\"573Hs00000023We\",\"buttonNameUK\":\"USL_CS_Chat_Button\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "SFDC_TOKEN_URL",
+            "value": "https://test.salesforce.com",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "sfdc_config_file",
+            "value": "./sfdc_config.json",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "examples",
+            "value": "{\"mockServicesHost\":\"http://localhost:8004\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "supportsMessageAck",
+            "value": "true",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "Oauth",
+            "value": "{\"grant_type\":\"client_credentials\",\"client_id\":\"rNzctitSmQlG1Lh3gz6T1Nnl74ys7I4e\",\"client_secret\":\"khVOtHEEeVxHq6C9\",\"OauthURL\":\"https://api-test.thomsonreuters.com/chatbot/oauth/v1/token\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "sendMailConf",
+            "value": "{\"sessionTimeoutMsg\":\"I’m closing our current conversation as I haven’t received any input from you. We can start over when you need.\",\"FromEmail\":\"triva_tr_nonprod@thomsonreuters.com\",\"sendMailAPIURL\":\"https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/users/\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "ReCAPtCHA",
+            "value": "{\"RecaptchaBaseURL\":\"https://recaptchaenterprise.googleapis.com/v1beta1/projects/\",\"Sitekey\":\"6LfdyXkcAAAAABFfeR86D80LabfYZGr7DX5Anfdl\",\"Prjectname\":\"a206800-cspaccount-s-n\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "criticalNotification",
+            "value": "{\"fromEmail\":\"triva_tr_nonprod@thomsonreuters.com\",\"sendMailAPIURL\":\"https://api-test.thomsonreuters.com/digital/unauth/v1/iqa/sendCriticalNotification/companies/WEST/emailId/\",\"criticalNotificationEmail\":[\"KoreDevTeam@TRTEN.onmicrosoft.com\",\"naveen.kothakota@thomsonreuters.com\"]}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "AddressForm",
+            "value": "{\"skipMessage\":\"Address Form is successfully submitted.\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "schedulingTime",
+            "value": "*/14 * * * *",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "ddEvents",
+            "value": "{\"method\":\"post\",\"maxBodyLength\":\"Infinity\",\"url\":\"https://api.datadoghq.com/api/v1/events\",\"headers\":{\"DD-API-KEY\":\"\",\"Accept\":\"application/json\",\"Content-Type\":\"application/json\"}}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "BOT_KIT",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_OAUTH_CLIENT_ID",
+            "value": "${CASETEXT_OAUTH_CLIENT_ID}",
+            "variableType": "env",
+            "hint": "QA Token (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_OAUTH_CLIENT_SECRET",
+            "value": "${CASETEXT_OAUTH_CLIENT_SECRET}",
+            "variableType": "env",
+            "hint": "QA Token (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_OAUTH_URL",
+            "value": "https://api-test.thomsonreuters.com/chatbot/oauth/v1/token",
+            "variableType": "env",
+            "hint": "QA Token (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_COVEO_API_CLIENT_ID",
+            "value": "${CASETEXT_COVEO_API_CLIENT_ID}",
+            "variableType": "env",
+            "hint": "Coveo (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_COVEO_API_CLIENT_SECRET",
+            "value": "${CASETEXT_COVEO_API_CLIENT_SECRET}",
+            "variableType": "env",
+            "hint": "Coveo (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "CASETEXT_COVEO_API_URL",
+            "value": "https://api.thomsonreuters.com/chatbot/oauth/v1/token",
+            "variableType": "env",
+            "hint": "Coveo (Authorization Profiles)",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "_comments",
+            "value": "This file has credentials to our personal Salesforce Instance, using customData to simulate portal behaviour",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "SFDC",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        },
+        {
+            "key": "live_agent_caseText",
+            "value": "{\"liveAgentUrl\":\"https://d.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/chat/rest\",\"organizationId\":\"00DO900000AVOGP\",\"deploymentId\":\"572Hs0000002340\",\"screenResolution\":\"1900x1080\",\"userAgent\":\"Mozilla/5.0\",\"apiVersion\":\"46\",\"language\":\"en-US\",\"buttonId\":\"573Hs00000023We\",\"caseRecordType\":\"0124O000000tEIkQAM\",\"buttonNameUK\":\"ESC_CaseText_CS_Chat_Button\",\"BusinessHoursId\":\"01mD60000000E2r\",\"BUSegment\":\"Professional Legal\",\"Priority\":\"2 - Medium\",\"UniqueIdentifier\":\"CasetextCSChat\",\"ProductSegment\":\"CoCounsel\",\"ProductTitle\":\"\",\"Entitlement\":\"550D6000002nrF2\"}",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "SFDC",
+            "propagateValue": false,
+            "vNameSpace": [
+                "b6af14b2-efc4-5112-9679-8f87e004b19c"
+            ],
+            "isSecured": false
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+sudo cp /mnt/nvme1n1p1/usr/bin/projects/GenAI/triva_chatbot/GenAI/app.js /mnt/nvme0n1p1/usr/bin/projects/GenAI/triva_chatbot/GenAI
+
+sudo cp /mnt/nvme1n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/gst/app.js /mnt/nvme0n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/gst
+ 
+sudo cp /mnt/nvme1n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/legal/app.js /mnt/nvme0n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/legal
+
+sudo cp /mnt/nvme1n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/tap/app.js /mnt/nvme0n1p1/usr/bin/projects/GenAI/triva_chatbot/botkit/tap
+
+sudo cp /mnt/nvme1n1p1/usr/bin/projects/GenAI/triva_chatbot/websdk/tr-web-sdk/src/libs/speech/app.js /mnt/nvme0n1p1/usr/bin/projects/GenAI/triva_chatbot/websdk/tr-web-sdk/src/libs/speech
+
+sudo cp /mnt/nvme1n1p1/usr/bin/triva_chatbot/botkit/gst/app.js /mnt/nvme0n1p1/usr/bin/triva_chatbot/botkit/gst
+sudo cp /mnt/nvme1n1p1/usr/bin/triva_chatbot/botkit/legal/app.js /mnt/nvme0n1p1/usr/bin/triva_chatbot/botkit/legal
+sudo cp /mnt/nvme1n1p1/usr/bin/triva_chatbot/botkit/tap/app.js /mnt/nvme0n1p1/usr/bin/triva_chatbot/botkit/tap
+
+sudo cp /mnt/nvme1n1p1/usr/bin/triva_chatbot/websdk/tr-web-sdk/src/libs/speech/app.js /mnt/nvme0n1p1/usr/bin/triva_chatbot/websdk/tr-web-sdk/src/libs/speech
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/gst/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/gst
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/gst/node_modules/json2xls/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/gst/node_modules/json2xls/node_modules/excel-export/example
+
+sudo cp /mnt/nvm6e1n1p1/usr/bin/sangam/triva_chatbot/botkit/gst/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/gst/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/legal/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/legal
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/legal/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/legal/node_modules/excel-export/example
+
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/legal/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/legal/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/tap/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/tap
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/tap/node_modules/json2xls/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/tap/node_modules/json2xls/node_modules/excel-export/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/botkit/tap/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/botkit/tap/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/triva_chatbot/websdk/tr-web-sdk/src/libs/speech/app.js /mnt/nvme0n1p1/usr/bin/sangam/triva_chatbot/websdk/tr-web-sdk/src/libs/speech
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/gst/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/gst
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/gst/node_modules/json2xls/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/gst/node_modules/json2xls/node_modules/excel-export/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/gst/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/gst/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/legal/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/legal
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/legal/node_modules/json2xls/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/legal/node_modules/json2xls/node_modules/excel-export/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/legal/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/legal/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/tap/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/tap
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/tap/node_modules/json2xls/node_modules/excel-export/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/tap/node_modules/json2xls/node_modules/excel-export/example
+
+sudo cp /mnt/nvme1n1p1/usr/bin/sangam/devBotkit/tap/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example/app.js /mnt/nvme0n1p1/usr/bin/sangam/devBotkit/tap/node_modules/json2xls/node_modules/excel-export/example/node_modules/express/node_modules/debug/example
+
+
+sudo cp /mnt/nvme1n1p1/home/a208085-PowerUser2/project/app.js /mnt/nvme0n1p1/home/a208085-PowerUser2/project
+
+sudo cp /mnt/nvme1n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/gst/app.js /mnt/nvme0n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/gst
+
+sudo cp /mnt/nvme1n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/legal/app.js /mnt/nvme0n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/legal
+
+sudo cp /mnt/nvme1n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/tap/app.js /mnt/nvme0n1p1/home/a208085-PowerUser2/triva_chatbot/botkit/tap
+
+sudo cp /mnt/nvme1n1p1/home/a208085-PowerUser2/triva_chatbot/websdk/tr-web-sdk/src/libs/speech/app.js /mnt/nvme0n1p1/home/a208085-PowerUser2/triva_chatbot/websdk/tr-web-sdk/src/libs/speech
+
+sudo cp /mnt/nvme1n1p1/home/ssm-user/.nvm/versions/node/v14.21.3/lib/node_modules/npm/node_modules/@iarna/cli/app.js /mnt/nvme0n1p1/home/ssm-user/.nvm/versions/node/v14.21.3/lib/node_modules/npm/node_modules/@iarna/cli

@@ -1,0 +1,41 @@
+name: Update Config Experiment
+
+on: [push]
+  # workflow_dispatch:  # This allows you to manually trigger the workflow
+
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Show original config
+        run: cat config.json
+      
+      - name: Update config with secret
+        run: |
+          # Read the config file
+          CONFIG=$(cat config.json)
+          
+          # Replace placeholder with secret (using sed)
+          CONFIG=$(echo "$CONFIG" | sed 's/"PLACEHOLDER_API_KEY"/"${{ secrets.API_KEY }}"/g')
+          
+          # Write updated config back to file
+          echo "$CONFIG" > updated-config.json
+      
+      - name: Show updated config (secret will be masked)
+        run: cat updated-config.json
+      
+      - name: Demonstrate secret masking
+        run: |
+          echo "GitHub automatically masks secrets in logs:"
+          echo "Raw secret would show as: ${{ secrets.API_KEY }}"
+          echo "Notice how it appears as *** in the logs"
+
+      - name: Check secret length
+        run: |
+           SECRET_LENGTH=${#API_KEY}
+           echo "Your secret is $SECRET_LENGTH characters long"
+        env:
+            API_KEY: ${{ secrets.API_KEY }}
